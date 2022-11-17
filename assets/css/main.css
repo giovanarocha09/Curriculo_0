@@ -986,6 +986,7 @@ section {
 .projects .portfolio-flters li:hover,
 .projects .portfolio-flters li.filter-active {
   color: var(--color-primary);
+
 }
 
 .projects .portfolio-flters li:first-child {
@@ -1038,7 +1039,7 @@ section {
   display: inline-block;
   left: 0;
   right: 0;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
 }
