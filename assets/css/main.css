@@ -740,65 +740,59 @@ section {
 
 
 /*--------------------------------------------------------------
-# Skills Section
+# My Services
 --------------------------------------------------------------*/
-.Skills .card-item {
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  background: #fff;
-  position: relative;
-  border-radius: 0;
-}
-
-.Skills .card-item .card-bg {
-  min-height: 300px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.Skills .card-item .card-body {
+.services .icon-box {
   padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border: 1px solid #fff;
 }
 
-.Skills .card-item h4 {
+.services .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 17px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  background: #fff4df;
+}
+
+.services .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: #ffb727;
+}
+
+.services .title {
   font-weight: 700;
-  font-size: 20px;
   margin-bottom: 15px;
-  color: var(--color-secondary);
+  font-size: 18px;
 }
 
-.Skills .card-item p {
-  color: var(--color-secondary);
-  margin: 0;
+.services .title a {
+  color: #111;
+  transition: 0.3s;
 }
 
-#Skills h2 {
-  margin: 0 0 10px 0;
-  font-size: 35px;
-  font-family: var(--font-secondary);
-  color:#6c6d6e;
-  letter-spacing: 1px;
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
 }
 
-#Skills h4 {
-  margin: 0 0 10px 0;
-  font-size: 20px;
-  font-family: var(--font-primary);
-  color:#3a7dc0;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.services .icon-box:hover {
+  border-color: #ffb727;
 }
 
-#Skills p {
-
-  align-items: center;
-  justify-content: space-between;
-  color: rgb(131, 127, 127);
-  font-size: 12px;
-  font-family: var(--font-primary);
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
+.services .icon-box:hover .title a {
+  color: #ffb727;
 }
 
 /*--------------------------------------------------------------
@@ -1518,6 +1512,40 @@ section {
   font-size: 16px;
   color: var(--color-primary);
   margin-right: 6px;
+}
+
+/*--------------------------------------------------------------
+# prog
+--------------------------------------------------------------*/
+.prog .progress {
+  height: 50px;
+  display: block;
+  background: none;
+}
+
+.prog .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font: var(--font-primary);
+  color: #2c4964;
+}
+
+.prog .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.prog .progress-bar-wrap {
+  background: #fbeaf1;
+}
+
+.prog .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
 }
 
 /*--------------------------------------------------------------
