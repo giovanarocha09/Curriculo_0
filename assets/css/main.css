@@ -10,7 +10,10 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 
+/* Geral */
+
 /* Fonts */
+
 @font-face {
   font-family: "Lato-Regular";
   src: url(../fonts/Lato/Lato-Regular.ttf)
@@ -32,8 +35,6 @@
   --font-secondary: "BebasNeue-Regular"; 
 }
 
-
-
 /* Colors */
 :root {
   --color-default: #364d59;
@@ -41,18 +42,13 @@
   --color-secondary: #52565e;
 }
 
-
-
 /* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
 }
 
+/* Corpo */
 
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: var(--font-primary);
   color: var(--color-default);
@@ -68,7 +64,6 @@ a:hover {
   color: #64ACE8;
   text-decoration: none;
 }
-
 
 
 /*--------------------------------------------------------------
@@ -740,8 +735,46 @@ section {
 
 
 /*--------------------------------------------------------------
-# My Services
+# My Skills
 --------------------------------------------------------------*/
+
+/*Fonts*/
+
+.services h2 {
+  margin: 0 0 10px 0;
+  font-size: 35px;
+  font-family: var(--font-secondary);
+  color: #6c6d6e;
+  letter-spacing: 1px;
+}
+
+.services h6 {
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(131, 127, 127);
+  font-size: 12px;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: #6c6d6e;
+}
+
+.services .title a {
+  color: #111;
+  transition: 0.3s;
+}
+
+/*Estrutura */
+
 .services .icon-box {
   padding: 30px;
   position: relative;
@@ -764,22 +797,6 @@ section {
   background: #fff4df;
 }
 
-.services .icon i {
-  font-size: 36px;
-  line-height: 1;
-  color: #ffb727;
-}
-
-.services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #111;
-  transition: 0.3s;
-}
 
 .services .description {
   font-size: 15px;
@@ -795,9 +812,7 @@ section {
   color: #ffb727;
 }
 
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
+
 .services .service-item {
   padding: 40px;
   background: #fff;
@@ -864,6 +879,7 @@ section {
 .services .service-item:hover h3 {
   border-color: var(--color-primary);
 }
+
 
 /*--------------------------------------------------------------
 # Features Section
@@ -1916,6 +1932,29 @@ section {
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
+
+/*fonts*/
+
+.recent-blog-posts h6 {
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(131, 127, 127);
+  font-size: 12px;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.recent-blog-posts h2 {
+
+  margin: 0 0 10px 0;
+  font-size: 35px;
+  font-family: var(--font-secondary);
+  color:#6c6d6e;
+  letter-spacing: 1px;
+}
+
 .recent-blog-posts .post-item {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
   transition: 0.3s;
