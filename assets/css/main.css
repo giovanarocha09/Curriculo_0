@@ -84,7 +84,7 @@ section {
 }
 
 .section-header h2 {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
   position: relative;
   color: #2e3135;
@@ -739,6 +739,28 @@ section {
 --------------------------------------------------------------*/
 
 /*Fonts*/
+
+@media (max-width: 575px) {
+
+  .services h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-family: var(--font-secondary);
+    color: #6c6d6e;
+    letter-spacing: 1px;
+  }
+  
+  .services h6 {
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(131, 127, 127);
+    font-size: 12px;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
 
 .services h2 {
   margin: 0 0 10px 0;
@@ -1533,6 +1555,26 @@ section {
 /*--------------------------------------------------------------
 # prog
 --------------------------------------------------------------*/
+
+.prog h2 {
+  margin: 0 0 10px 0;
+  font-size: 35px;
+  font-family: var(--font-secondary);
+  color: #6c6d6e;
+  letter-spacing: 1px;
+}
+
+.prog h6 {
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(131, 127, 127);
+  font-size: 12px;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 .prog .progress {
   height: 50px;
   display: block;
@@ -1555,13 +1597,35 @@ section {
 }
 
 .prog .progress-bar-wrap {
-  background: #fbeaf1;
+  background: #ffffff41;
 }
 
 .prog .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
+}
+
+@media (max-width: 575px) {
+
+  .prog h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-family: var(--font-secondary);
+    color: #6c6d6e;
+    letter-spacing: 1px;
+  }
+  
+  .prog h6 {
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(131, 127, 127);
+    font-size: 12px;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1799,55 +1863,78 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact Section
+# Contact Me
 --------------------------------------------------------------*/
-.contact .info-item {
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
 }
 
-.contact .info-item i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
+.contact .info-box i.bx {
   font-size: 24px;
-  line-height: 0;
-  color: var(--color-primary);
+  color: #ffb727;
   border-radius: 50%;
-  border: 2px dotted #ffd565;
+  padding: 15px;
+  background: #fff6e4;
 }
 
-.contact .info-item h3 {
+.contact .info-box h3 {
   font-size: 20px;
-  color: #6c757d;
+  color: #777777;
   font-weight: 700;
   margin: 10px 0;
 }
 
-.contact .info-item p {
+.contact .info-box p {
   padding: 0;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
-  padding: 30px;
+.contact .social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
-.contact .php-email-form .form-group {
-  padding-bottom: 20px;
+.contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #687683;
+  line-height: 1;
+  margin: 0 8px;
+  transition: 0.3s;
+  padding: 14px;
+  border-radius: 50px;
+  border: 1px solid #dde1e4;
+}
+
+.contact .social-links a:hover {
+  color: #fff;
+  border-color: #ffb727;
+  background: #ffb727;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 27px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
 }
 
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #df1529;
+  background: #ed3c0d;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1860,7 +1947,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #059652;
+  background: #18d26e;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1880,8 +1967,8 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #059652;
-  border-top-color: #fff;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
@@ -1893,30 +1980,40 @@ section {
   font-size: 14px;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--color-primary);
+.contact .php-email-form input::focus,
+.contact .php-email-form textarea::focus {
+  background-color: #ffb727;
 }
 
 .contact .php-email-form input {
-  height: 44px;
+  padding: 10px 15px;
 }
 
 .contact .php-email-form textarea {
-  padding: 10px 12px;
+  padding: 12px 15px;
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
+  background: #ffb727;
   border: 0;
-  padding: 10px 35px;
+  padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
   border-radius: 5px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: #ffc85a;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes animate-loading {
@@ -2848,6 +2945,36 @@ section {
 # My Resume
 --------------------------------------------------------------*/
 
+.resume h2 {
+  margin: 0 0 10px 0;
+  font-size: 35px;
+  font-family: var(--font-secondary);
+  color: #6c6d6e;
+  letter-spacing: 1px;
+}
+
+.resume h6 {
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(131, 127, 127);
+  font-size: 12px;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.resume h3 {
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(131, 127, 127);
+  font-size: 12px;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 
 .resume .resume-title {
   font-size: 26px;
@@ -2906,6 +3033,27 @@ section {
   border: 2px solid #82909c;
 }
 
+@media (max-width: 575px) {
+
+  .resume h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-family: var(--font-secondary);
+    color: #6c6d6e;
+    letter-spacing: 1px;
+  }
+  
+  .resume h6 {
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(131, 127, 127);
+    font-size: 12px;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
 
 
 /*--------------------------------------------------------------
