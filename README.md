@@ -1,2 +1,2 @@
-# Curriculo_0
+# Curriculo
 https://giovanarocha09.github.io/Curriculo/
