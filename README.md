@@ -1,2 +1,2 @@
 # Curriculo
-https://giovanarocha09.github.io/Curriculo/
+https://giovanarochaz.github.io/Curriculo/
